@@ -1,0 +1,114 @@
+Copyright (c) Anudev Gill
+
+Pseudocode:
+
+START program
+BUILD variables needed for program
+BUILD 8 int[] arrays that contain the Knowledge and Understanding, Thinking, Communication, and Application weightings for each course in that order 
+WELCOME user
+EXPLAIN the program to the user
+ASK user to input which course they would like to calculate a weighted average for
+OBTAIN user's input for course choice
+STORE user's input for course choice in variable int courseChoice
+LOOP 4 times, and
+    IF looping for the first time, then
+        ASK user to enter their Knowledge and Understanding mark or -1 if the category was absent from the assessment
+    ELSE IF looping for the second time, then 
+        ASK user to enter their Thinking mark or -1 if the category was absent from the assessment
+    ELSE IF looping for the third time, then
+        ASK user to enter their Communication mark or -1 if the category was absent from the assessment
+    ELSE IF looping for the fourth time, then
+        ASK user to enter their Application mark or -1 if the category was absent from the assessment
+    OBTAIN user's input for their mark
+    STORE user's input for mark in a double[] array called inputMarks at index i, where i corresponds to the loop number
+IF user chooses Biology for their course choice, then
+    LOOP 4 times, and
+        IF inputMarks[i] equals -1, then
+            DO nothing
+        ELSE
+            MULTIPLY inputMarks[i] with bioWeighting[i]
+            STORE the product in variable double numerator
+            ADD bioWeighting[i] to variable double denominator
+    DIVIDE numerator by denominator
+    STORE the result in variable double weightedAvg
+    PRINT weightedAvg
+ELSE IF user chooses Computer Science for their course choice, then
+    LOOP 4 times, and
+        IF inputMarks[i] equals -1, then
+            DO nothing
+        ELSE
+            MULTIPLY inputMarks[i] with compSciWeighting[i]
+            STORE the product in variable double numerator
+            ADD compSciWeighting[i] to variable double denominator
+    DIVIDE numerator by denominator
+    STORE the result in variable double weightedAvg
+    PRINT weightedAvg
+ELSE IF user chooses Chemistry for their course choice, then
+    LOOP 4 times, and
+        IF inputMarks[i] equals -1, then
+            DO nothing
+        ELSE
+            MULTIPLY inputMarks[i] with chemWeighting[i]
+            STORE the product in variable double numerator
+            ADD chemWeighting[i] to variable double denominator
+    DIVIDE numerator by denominator
+    STORE the result in variable double weightedAvg
+    PRINT weightedAvg
+ELSE IF user chooses Presentations and Speaking for their course choice, then
+    LOOP 4 times, and
+        IF inputMarks[i] equals -1, then
+            DO nothing
+        ELSE
+            MULTIPLY inputMarks[i] with presSpeakingWeighting[i]
+            STORE the product in variable double numerator
+            ADD presSpeakingWeighting[i] to variable double denominator
+    DIVIDE numerator by denominator
+    STORE the result in variable double weightedAvg
+    PRINT weightedAvg
+ELSE IF user chooses French for their course choice, then
+    LOOP 4 times, and
+        IF inputMarks[i] equals -1, then
+            DO nothing
+        ELSE
+            MULTIPLY inputMarks[i] with frenchWeighting[i]
+            STORE the product in variable double numerator
+            ADD frenchWeighting[i] to variable double denominator
+    DIVIDE numerator by denominator
+    STORE the result in variable double weightedAvg
+    PRINT weightedAvg
+ELSE IF user chooses Physics for their course choice, then
+    LOOP 4 times, and
+        IF inputMarks[i] equals -1, then
+            DO nothing
+        ELSE
+            MULTIPLY inputMarks[i] with physicsWeighting[i]
+            STORE the product in variable double numerator
+            ADD physicsWeighting[i] to variable double denominator
+    DIVIDE numerator by denominator
+    STORE the result in variable double weightedAvg
+    PRINT weightedAvg
+ELSE IF user chooses Functions for their course choice, then
+    LOOP 4 times, and
+        IF inputMarks[i] equals -1, then
+            DO nothing
+        ELSE
+            MULTIPLY inputMarks[i] with functionsWeighting[i]
+            STORE the product in variable double numerator
+            ADD functionsWeighting[i] to variable double denominator
+    DIVIDE numerator by denominator
+    STORE the result in variable double weightedAvg
+    PRINT weightedAvg
+ELSE IF user chooses AP English for their course choice, then
+    LOOP 4 times, and
+        IF inputMarks[i] equals -1, then
+            DO nothing
+        ELSE
+            MULTIPLY inputMarks[i] with engWeighting[i]
+            STORE the product in variable double numerator
+            ADD engWeighting[i] to variable double denominator
+    DIVIDE numerator by denominator
+    STORE the result in variable double weightedAvg
+    PRINT weightedAvg
+ELSE
+    PRINT error message
+END program
